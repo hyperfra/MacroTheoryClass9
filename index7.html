@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Class 9</title>
+
+		<link rel="stylesheet" href="plugin/reveal.css">
+		<link rel="stylesheet" href="plugin/black2.css" id="theme">
+        <link rel="stylesheet" href="plugin/monokai.css">
+        <link rel="stylesheet" href="plugin/title-footer.css">
+       
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+
+                <!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+                <section data-markdown data-separator="\n---\n" data-separator-vertical="^\n--\n">
+                    <script type="text/template">
+                        <!-- .slide: style="text-align: left;" -->
+                        ## Macroeconomic Theory
+                        ### Francesco Franco - Nova SBE
+                        #### T3 2023 
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        ### The New Keynesian Model
+                        #### New Ingredients to the classical model
+                        - Sticky prices (staggered price setting):real effects of nominal interest
+                        rate (real)
+                        - Monopolistic competition: price setters
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Household problem now with many goods 
+                        Representative agent solves:
+                        $$\max E_{0}\sum_{t=0}^{\infty}\beta^{t}\left[\frac{C_{t}^{1-\sigma}-1}{1-\sigma}-\frac{N_{t}^{1+\varphi}}{1+\varphi}\right]$$
+
+                        where
+                        $$C_{t}\equiv\left(\int_{0}^{1}C_{t}(i)^{1-\frac{1}{\epsilon}}di\right)^{\frac{\epsilon}{\epsilon-1}}$$
+                        subject to
+                        $$\int_{0}^{1}P_{t}(i)C_{t}(i)di+Q_{t}A_{t}\leq A_{t-1}+W_{t}N_{t}+D_{t}$$
+
+                        plus no Ponzi condition.
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                
+                        #### The intratemporal demand across goods
+
+                        Each household faces a demand curve for its product, which we shall have
+                        to derive (the demand for the good by all other consumers.) Think of the
+                        total expenditure of a household $$\int_{0}^{1}P_{t}(i)C_{t}(i)di$$ The
+                        allocation of expenditure in the various consumption goods is an
+                        intratemporal decision.
+
+                        ---
+                        
+                        <!-- .slide: style="text-align: left;" -->
+                        #### The intratemporal demand across goods
+                       
+                        You can see it as households facing a the cost minimization problem in
+                        buying the bundle: $$\min_{C_{t}(i)}\int_{0}^{1}P_{t}(i)C_{t}(i)di$$
+
+                        subject to
+                        $C_{t}\equiv\left(\int_{0}^{1}C_{t}(i)^{1-\frac{1}{\epsilon}}di\right)^{\frac{\epsilon}{\epsilon-1}}$
+
+                        ---
+                        
+                        <!-- .slide: style="text-align: left;" -->
+                        #### The intratemporal demand across goods
+
+                        The cost minimization problem is nice for the lagrange multiplier
+                        associated with the consumption bundle constraint in the price deflator:
+                        $$P_{t}\equiv\left(\int_{0}^{1}P_{t}(i)^{1-\epsilon}di\right)^{\frac{1}{1-\epsilon}}$$
+                        Using the price deflator definition the minimization problem gives the
+                        demand of each good
+                        $$C_{t}(i)=\left(\frac{P_{t}(i)}{P_{t}}\right)^{-\epsilon}C_{t}$$ and in
+                        the budget constraint $$\int_{0}^{1}P_{t}(i)C_{t}(i)di=P_{t}C_{t}$$
+                                                
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                    
+                        #### The households FOC as in the classical model
+                        
+                        The other first order conditions wrt to $C_{t}$ and $A_{t}$ are as
+                        before $$w_{t}-p_{t}=\sigma c_{t}+\varphi n_{t}$$
+                        $$c_{t}=E_{t}\{c_{t+1}\}-\frac{1}{\sigma}(i_{t}-E_{t}\{\pi_{t+1}\}-\rho)$$
+
+                        ---
+
+                         <!-- .slide: style="text-align: left;" -->
+                    
+                        #### Firms
+                        ##### Price setters
+
+                        Remeber that households demand
+
+                        $$C_{t}(i)=\left(\frac{P_{t}(i)}{P_{t}}\right)^{-\epsilon}C_{t}$$
+
+                        where $i$ indexes a continuum of goods. Each good is produced by a
+                        single firm with technology $$Y_{t}(i)=Z_{t}N_{t}(i)^{1-\alpha}$$
+
+                        where $z_{t}=ln(Z_{t})$ is a random aggregate technology shock.
+
+                        ---
+
+                         <!-- .slide: style="text-align: left;" -->
+                    
+                        #### Flexible prices
+
+                        With flexible prices firm maximize profits
+                        $$\Pi_{t}(i)=P_{t}(i)Y_{t}(i)-W_{t}N_{t}(i)$$
+
+                        subject to the demand and the production function. That gives
+                        $$P_{t}(i)=\frac{\epsilon}{\epsilon-1}\frac{W_{t}}{Z_{t}N_{t}(i)^{-\alpha}(1-\alpha)}$$
+                        where $\frac{\epsilon}{\epsilon-1}$ is the markup $M$ . Given that the
+                        labor supply did not change from the classical you can see that the
+                        effect of the monopolistic competition is to decrease employment and
+                        therefore output relative to the perfect competition case. The dynamics
+                        implied by any shock are identical to the perfect competition case.
+                        Define $\Psi_{t}(i)$=$\frac{W_{t}}{Z_{t}N_{t}(i)^{-\alpha}(1-\alpha)}$
+                        the nominal marginal cost for firm $i$.
+
+                        ---
+
+                         <!-- .slide: style="text-align: left;" -->
+                    
+                        #### Flexible prices: symmetric equilibrium
+                        
+                        Let us see that we have a symemtric equilibrium: think of the labor
+                        market equilibrium, use the labor
+                        supply$\frac{W_{t}}{P_{t}}=C_{t}^{\sigma}N_{t}^{\varphi}$ in the price
+                        setting (tha substitutes the labor demand)
+                        $$\frac{P_{t}(i)}{P_{t}}=\frac{\epsilon}{\epsilon-1}\frac{C_{t}^{\sigma}N_{t}^{\varphi}}{Z_{t}N_{t}(i)^{-\alpha}(1-\alpha)}$$
+                        and use the equilibrium in each goods market equating demand
+                        $C_{t}(i)=\left(\frac{P_{t}(i)}{P_{t}}\right)^{-\epsilon}C_{t}$ (you get
+                        $\frac{P_{t}(i)}{P_{t}}=\left(\frac{C_{t}(i)}{C_{t}}\right)^{-\frac{1}{\epsilon}}$)
+                        and supply $C_{t}(i)=Y_{t}(i)=Z_{t}N_{t}(i)^{1-\alpha}$
+                        $$N_{t}(i)^{-\left(1-\alpha\right)\frac{1}{\epsilon}-\alpha}=\frac{\epsilon}{\epsilon-1}\frac{C_{t}^{\sigma}N_{t}^{\varphi}}{Z_{t}(1-\alpha)}\left(\frac{Z_{t}}{C_{t}}\right)^{\epsilon}$$
+                        which is the same for every $i$.
+                        
+                        ---
+
+                         <!-- .slide: style="text-align: left;" -->
+                    
+                        #### Flexible prices: symmetric equilibrium
+                        
+                        There is a particular case that simplifies a lot the model (but less
+                        interesting) name when there are constant return to scale to
+                        labor$Y_{t}(i)=Z_{t}N_{t}(i)$ this is because the marginal cost does not
+                        depend on labor
+                        $$P_{t}(i)=\frac{\epsilon}{\epsilon-1}\frac{W_{t}}{Z_{t}}$$ which is the
+                        same for every $i$ again.
+                        
+                        ---
+
+                         <!-- .slide: style="text-align: left;" -->
+                    
+                        #### Sticky prices
+                      
+                        How to model the observed fact that prices do not usually jump. The most
+                        commonly used model is based on Calvo (1983) where he postulates that
+                        the probability of resetting price in any given period: $1-\theta$,
+                        independent across firms. This formulation has some advantages:
+
+                        -   $\theta$ is the index of price stickiness and is $\in[0,1]$.
+
+                        -   $\frac{1}{1-\theta}$ is the implied average price duration.
+
+                        -   the firms that can adjust their price at time $t$ will all choose
+                            the same price (as in the flexible price case). Let us denote that
+                            price $P_{t}^{*}$.
+
+                        ---
+
+                         <!-- .slide: style="text-align: left;" -->
+                    
+                        #### Sticky prices
+                       
+                        With flexible prices we found that the price level was
+                        $$P_{t}\equiv\left(\int_{0}^{1}P_{t}(i)^{1-\epsilon}di\right)^{\frac{1}{1-\epsilon}}$$
+
+                        now you can see the probability as a fraction $1-\theta$ of firms with
+                        identical technology that can adjust the price $P_{t}^{*}$ and a
+                        fraction $\theta$ that must keep the previous period price $P_{t-1}$,
+                        so:
+
+                        $$P_{t}=\left[\theta(P_{t-1})^{1-\epsilon}+(1-\theta)(P_{t}^{*})^{1-\epsilon}\right]^{\frac{1}{1-\epsilon}}$$
+                        
+                        and in log-linear terms (around a steady state with inflation equal to $p_{t}=\theta p_{t-1}+(1-\theta)p_{t}^{*}$ 
+                        
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Sticky prices and price decision
+                      
+                        Firms choose their price as before but optimally take into account the
+                        fact that they can be stick with the price they choose for several
+                        periods:
+
+                        <span>
+                            \[\begin{aligned}
+                            max_{P_{t}^{\ast}}\sum_{k=0}^{\infty}\theta^{k}E_{t}\left\{ Q_{t,t+k}\left(P_{t}^{\ast}Y_{t+k|t}-W_{t+k}N_{t+k|k}\right)\right\} 
+                            \end{aligned} \]
+                        <span>
+
+                        subject to $$Y_{t+k|t}=Z_{t+k}N_{t+k|t}^{1-\alpha}$$
+                        $$Y_{t+k|t}=\left(\frac{P_{t}^{*}}{P_{t+k}}\right)^{-\epsilon}C_{t+k}$$
+
+                        $for\ k=0,1,2,... \ where \  Q_{t,t+k}\equiv\beta^{k}\left(U_{c,t+k}/U_{c,t}\right)\left(P_{t}/P_{t+k}\right)$
+                        and $Y_{t+k|t}$ denotes the output of the group of firm at time $t+k$
+                        that had set the price at time $t$.
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Optimal Price condition
+
+                        The foc:
+
+                        <span>
+                            \[\begin{aligned}
+                            \sum_{k=0}^{\infty}\theta^{k}E_{t}\left\{ Q_{t,t+k}Y_{t+k|t}\left(P_{t}^{*}-\mathcal{M}\Psi_{t+k|t}\right)\right\} =0
+                            \end{aligned} \]
+                        <span>
+
+                        $\Psi_{t+k|t}$ is the nominal marginal cost and
+                        $\mathcal{M=}\frac{\epsilon}{\epsilon-1}$ the markup. If $\theta=0$ we
+                        are back to flex prices. The log-linear approx around zero inflation
+                        steady state gives an intuitive equation
+                        $$p_{t}^{*}=\mu+(1-\beta\theta)\sum_{k=0}^{\infty}(\beta\theta)^{k}E_{t}\psi_{t+k|t}$$
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Markup - labor demand
+
+                        In the model with decreasing return to scale the marginal cost for a
+                        firm is $$\psi_{t+k|t}=w_{t+k}-mpn_{t+k|t}$$
+                        $$\psi_{t+k|t}=w_{t+k}-\left(z_{t+k}-\alpha n_{t+k|t}+log(1-\alpha)\right)$$
+                        The economys average real marginal cost is defined by
+                        $\psi_{t+k}=\int_{0}^{1}\psi_{t+k}(i)di$
+
+                        $$\begin{aligned}
+                        \psi_{t+k} & =w_{t+k}-mpn_{t+k}\\
+                        & =w_{t+k}-(z_{t+k}-\alpha n_{t+k}+log(1-\alpha))\end{aligned}$$
+                        
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Markup - labor demand
+
+                        therefore the marginal cost for a firm that reset the price at time $t$
+                        is the average marginal cost in the economy minus a gap from the
+                        different employment choice
+                        $$\psi_{t+k|t}=\psi_{t+k}+\alpha\left(n_{t+k|t}-n_{t+k}\right)$$ and use
+                        technology $n_{t}=\frac{1}{1-\alpha}(y_{t}-z_{t})$ and product demand
+                        $y_{t+k|t}-y_{t}=-\epsilon\left(p_{t}^{*}-p_{t}\right)$ to get
+
+                        $$\psi_{t+k|t}=\psi_{t+k}-\frac{\alpha\epsilon}{1-\alpha}\left(p_{t}^{*}-p_{t+k}\right)$$
+                        
+                        ---
+
+                         <!-- .slide: style="text-align: left;" -->
+                         #### Optimal Price condition
+
+                         Combining
+                        $$p_{t}^{*}=\mu+(1-\beta\theta)\sum_{k=0}^{\infty}(\beta\theta)^{k}E_{t}\left(\psi_{t+k|t}\right)$$
+                        with
+
+                        $$\psi_{t+k|t}=\psi_{t+k}-\frac{\alpha\epsilon}{1-\alpha}\left(p_{t}^{*}-p_{t+k}\right)$$
+
+                        ---
+
+                         <!-- .slide: style="text-align: left;" -->
+                         #### Optimal Price condition
+
+                        gives
+
+                        <span>
+                            \[\begin{aligned}
+                            p_{t}^{*}=(1-\beta\theta)\sum_{k=0}^{\infty}(\beta\theta)^{k}E_{t}\left(\left(\psi_{t+k}+\mu\right)-\frac{\alpha\epsilon}{1-\alpha}\left(p_{t}^{*}-p_{t+k}\right)\right)
+                            \end{aligned} \]
+                        <span>
+                       
+                        $$p_{t}^{*}=(1-\beta\theta)\sum_{k=0}^{\infty}(\beta\theta)^{k}E_{t}\left(\Theta\left(\psi_{t+k}-p_{t+k}+\mu\right)+p_{t+k}\right)$$
+                        
+                        where  $\Theta=\frac{1-\alpha}{1-\alpha+\alpha\epsilon}$
+                        
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Optimal Price condition
+
+                        Then
+                        $$p_{t}^{*}=(1-\beta\theta)\sum_{k=0}^{\infty}(\beta\theta)^{k}E_{t}\left(\Theta\left(\psi_{t+k}-p_{t+k}+\mu\right)+p_{t+k}\right)$$
+
+                        You can write it in recursive form
+
+                        <span>
+                            \[\begin{aligned}
+                            p_{t}^{*}=(1-\beta\theta)\left(\Theta\left(\psi_{t}-p_{t}+\mu\right)+p_{t}\right)+\beta\theta E_{t}p_{t+1}^{*}
+                            \end{aligned} \]
+                        <span>
+ 
+                        subtract $p_{t-1}$
+
+                        <span>
+                            \[\begin{aligned}
+                            p_{t}^{*}-p_{t-1}=(1-\beta\theta)\left(\Theta\left(\psi_{t}-p_{t}+\mu\right)+p_{t}\right)-p_{t-1}+\beta\theta E_{t}p_{t+1}^{*}
+                            \end{aligned} \]
+                        <span>
+                        
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Optimal Price condition
+                        
+                        use
+                        
+                        $$\pi_{t}=p_{t}-p_{t-1}=(1-\theta)\left(p_{t}^{*}-p_{t-1}\right)$$ to
+                        
+                        get the NKPC
+                        
+                        $$\pi_{t}=\lambda\left(\psi_{t}-p_{t}+\mu\right)+\beta E_{t}\{\pi_{t+1}\}$$
+
+                        $\lambda=\frac{\left(1-\theta\right)(1-\beta\theta)}{\theta}\Theta.$
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### NK-Phillips Curve
+                        Replacing in the NKPC
+                        $$\pi_{t}=\beta E_{t}\{\pi_{t+1}\}+\lambda\left(mc_{t}+\mu\right)$$
+
+                        $mc_{t}=\psi_{t}-p_{t}$,
+                        $\lambda\equiv\frac{(1-\theta)(1-\beta\theta)}{\theta}\Theta$ ,
+                        $\Theta=\frac{1-\alpha}{1-\alpha+\alpha\epsilon}$ (solve forward).
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Equilibrium
+
+                        Clearing in the continuum of goods market $$Y_{t}(i)=C_{t}(i)$$
+                        aggregating
+                        $$Y_{t}\equiv\left(\int_{0}^{1}Y_{t}(i)^{1-\frac{1}{\epsilon}}di\right)^{\frac{\epsilon}{\epsilon-1}}=C_{t}$$
+                            
+                        in log linear $$y_{t}=c_{t}$$
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Labor market clearing
+
+                        <span>
+                            \[\begin{aligned}
+                            N_{t}  =\int_{0}^{1}N_{t}(i)di
+                            \end{aligned} \]
+                        <span>
+                            
+                        <span>
+                            \[\begin{aligned}
+                            N_{t}  =\int_{0}^{1}\left(\frac{Y_{t}(i)}{Z_{t}}\right)^{\frac{1}{1-\alpha}}di
+                            \end{aligned} \]
+                        <span>
+                            
+                        <span>
+                            \[\begin{aligned}
+                            N_{t}  =\left(\frac{Y_{t}}{Z_{t}}\right)^{\frac{1}{1-\alpha}}\int_{0}^{1}\left(\frac{P_{t}(i)}{P_{t}}\right)^{-\frac{\epsilon}{1-\alpha}}
+                            \end{aligned} \]
+                        <span> 
+
+                        the last term implies a gap between employment with flexible prices and
+                        sticky prices: another inefficiency after the imperfect competition.
+                        $$n_{t}=\frac{1}{1-\alpha}(y_{t}-z_{t})+d_{t}$$ The $d_{t}$ term
+                        disappear to a first order approximation around zero inflation rate.
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Labor market clearing
+
+                        The labor supply is $$w_{t}-p_{t}=\sigma c_{t}+\varphi n_{t}$$ using the
+                        labor demand and technology
+
+                        <span>
+                            \[\begin{aligned}
+                            mc_{t} =\left(w_{t}-p_{t}\right)-(z_{t}-\alpha n_{t}+log(1-\alpha))
+                            \end{aligned} \]
+                        <span>
+
+                        <span>
+                            \[\begin{aligned}
+                            mc_{t} =(\sigma y_{t}+\varphi n_{t})-(z_{t}-\alpha n_{t}+\log(1-\alpha))
+                            \end{aligned} \]
+                        <span>
+                        
+                        <span>
+                            \[\begin{aligned}
+                            mc_{t} =\left(\sigma+\frac{\varphi+\alpha}{1-\alpha}\right)y_{t}-\left(1+\frac{\varphi+\alpha}{1-\alpha}\right)z_{t}-\log(1-\alpha)
+                            \end{aligned} \]
+                        <span>
+
+                        ---
+
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Natural level of output and markup gap
+
+                        IN this model the natural level of output is the output that prevails
+                        with flexible prices, hence when the markup is constant
+                        $$mc=\left(\sigma+\frac{\varphi+\alpha}{1-\alpha}\right)y_{t}^{n}-\left(1+\frac{\varphi+\alpha}{1-\alpha}\right)z_{t}-\log(1-\alpha)$$
+
+                        the marginal cost gap is therefore
+                        $$\left(mc_{t|t}-mc\right)=\left(\sigma+\frac{\varphi+\alpha}{1-\alpha}\right)(y_{t}-y_{t}^{n})$$
+
+                        ---
+                        
+                        <!-- .slide: style="text-align: left;" -->
+                        #### The New Keynesian Phillips curve
+
+                        Substitute the marginal cost gap and you get the NKPC
+                        $$\pi_{t}=\beta E_{t}\{\pi_{t+1}\}+\lambda\left(\sigma+\frac{\varphi+\alpha}{1-\alpha}\right)(y_{t}-y_{t}^{n})$$
+                        or more compactly
+                        $$\pi_{t}=\beta E_{t}\{\pi_{t+1}\}+\kappa\widetilde{y}_{t}$$
+
+                        which is the first equation of our NK model
+
+                        ---
+                        
+                        <!-- .slide: style="text-align: left;" -->
+                        #### The C-S condition (Dynamic IS)
+
+                        The Euler condition + the goods market equilibrium gives with the Euler
+                        equation:
+                        $$y_{t}=E_{t}\{y_{t+1}\}-\frac{1}{\sigma}(i_{t}-E_{t}\{\pi_{t+1}\}-\rho)$$
+
+                        you can rewrite it in terms of output gap
+
+                        <span>
+                            \[\begin{aligned}
+                            \widetilde{y}_{t}=E_{t}\{\widetilde{y}_{t+1}\}-\frac{1}{\sigma}(i_{t}-E_{t}\{\pi_{t+1}\}-r_{t}^{n})
+                            \end{aligned} \]
+                        <span>
+
+                        where $r_{t}^{n}=\rho-\sigma(1-\rho_{z})\psi_{yz}z_{t}$ is the natural
+                        rate of interest (Wicskell)
+
+                        ---
+                        
+                        <!-- .slide: style="text-align: left;" -->
+                        #### The C-S condition (Dynamic IS)
+
+                        Definition of $r_{t}^{n}$:
+                        
+                        $$y_{t}^{n}=E_{t}\left[y_{t+1}^{n}\right]-\frac{1}{\sigma}\left(r_{t}^{n}-\rho\right)$$
+                        
+                        so
+                        
+                        $$r_{t}^{n}=\rho+\sigma E_{t}\left[y_{t+1}^{n}-y_{t}^{n}\right]$$ 
+                        
+                        use the solution of the natural output $y_{t}^{n}=\psi_{y}+\psi_{yz}z_{t}$ and
+                        $z_{t}=\rho_{z}z_{t-1}+\epsilon_{t}^{z}$ and express the Dynamic IS in terms
+                        of $\tilde{y} = y-y^{n}$
+
+                        ---
+                        
+                        <!-- .slide: style="text-align: left;" -->
+                        #### The policy block
+
+                        We know that to determine the nominal side of the economy we need to add
+                        an equation that pins down the nominal interest rate.
+
+                        We need to find a
+                        rule that gives determinacy of the equilibrium. 
+
+                        ---
+                        
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Interest rate rule
+
+                        Consider the following rule $$i_{t}=\rho+\phi_{\pi}\pi_{t}+v_{t}$$ where
+                        $v_{t}$ is a monetary policy shock.
+
+                        Now the complete model is
+
+                        <span>
+                            \[\begin{aligned}
+                            \widetilde{y}_{t}=E_{t}\{\widetilde{y}_{t+1}\}-\frac{1}{\sigma}(i_{t}-E_{t}\{\pi_{t+1}\}-r_{t}^{n})
+                            \end{aligned} \]
+                            <span>    
+
+                        $$\pi_{t}=\beta E_{t}\{\pi_{t+1}\}+\kappa\widetilde{y}_{t}$$
+
+                        plus the rule. We have approximated the large microfounded non linear
+                        model to a 3 linear equations model. (we know where the parameters are
+                        coming from)
+
+                        ---
+                        
+                        <!-- .slide: style="text-align: left;" -->
+                        #### Dynamics
+
+                        The system is 
+                        
+                        <span>
+                            \[\begin{aligned}
+                            \ \left[\begin{array}{l}
+                            \widetilde{y}_{t}\\
+                            \pi_{t}
+                            \end{array}\right]=\mathbf{A}_{T}\left[\begin{array}{l}
+                            E_{t}\{\widetilde{y}_{t+1}\}\\
+                            E_{t}\{\pi_{t+1}\}
+                            \end{array}\right]+\mathbf{B}_{T}u_{t}
+                            \end{aligned} \]
+                        <span>
+                        
+                        where
+                        
+                        <span>
+                            \[\begin{aligned}
+                            u_{t}\equiv\widehat{r}_{t}^{n}-v_{t}
+                            \end{aligned} \]
+                        <span>
+                        
+                        and
+
+                        <span>
+                            \[\begin{aligned}
+                            \mathbf{A}_{T}\equiv\Omega\left[\begin{array}{cc}
+                            \sigma & 1-\beta\phi_{\pi}\\
+                            \sigma\kappa & \kappa+\beta\sigma
+                            \end{array}\right];\mathbf{B_{T}}\equiv\Omega\left[\begin{array}{l}
+                            1\\
+                            \kappa
+                            \end{array}\right]
+                            \end{aligned} \]
+                        <span>
+
+                        and Uniqueness condition: $\kappa(\phi_{\pi}-1)>0$
+                                        
+                        
+                    </script>
+                </section>
+
+            </div>
+		</div>
+
+		<script src="plugin/reveal.js"></script>
+        <script src="plugin/markdown.js"></script>
+        <script src="plugin/highlight.js"></script>
+        <script src="plugin/notes.js"></script>
+        <script src="plugin/plugin.js"></script>
+        <script src="plugin/math.js"></script>
+        <script src="plugin/plugin.js"></script>
+        <script src="plugin/menu.js"></script>
+        <script src="plugin/pdfexport.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+                center: true,
+                touch: true,
+                dependencies:
+                [
+                    { src: 'plugin/title-footer.js', async: true, callback: function() { title_footer.initialize(); } }
+                ],
+                math: {
+                    mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',
+                    // pass other options into `MathJax.Hub.Config()`
+                    TeX: { Macros: { RR: "{\\bf R}" } }
+                    },
+        
+                chalkboard: {
+                    boardmarkerWidth: 3,
+                    chalkWidth: 3,
+                    chalkEffect: 0.0,
+                    src: null,
+                    readOnly: false,
+                    toggleChalkboardButton: { left: "90px", bottom: "30px", top: "auto", right: "auto" },
+                    toggleNotesButton: { left: "60px", bottom: "30px", top: "auto", right: "auto" },
+                    transition: 800,
+                    theme: "whiteboard",
+                    background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+                    //grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 0.5},
+                    eraser: { src: path + 'img/sponge.png', radius: 20},
+                    boardmarkers : [
+                            { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+                            { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+                            { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+                            { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+                            { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+                            { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+                            { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+                    ],
+                    chalks: [
+                            { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+                            { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+                            { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+                            { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+                            { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+                            { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+                            { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+                    ]
+                },
+                
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes,RevealMath, RevealMenu, RevealChalkboard, PdfExport]
+			});
+
+		</script>
+
+	</body>
+</html>
